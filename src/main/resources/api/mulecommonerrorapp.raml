@@ -1,0 +1,22 @@
+#%RAML 1.0
+title: MuleCommonErrorApp
+description: "Implementing Common Services"
+version: v1
+protocols: [http, https]
+mediaType: 
+  - application/json  
+
+/errorHandller:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: {"Message" : "Hello"}
+  post:
+    body:
+      example: {"Message" : "Hello"}
+    responses:
+      201:
+        body:
+          example: {"Message" : "Hi How r u !"}
